@@ -8,7 +8,7 @@ const Footer = () => {
     <Box p={"36px 0"}>
       <Box className="container">
         <Flex flexDirection={"column"} align={"center"} gap={"16px"}>
-          <Link {...css.link} href="tel+998990027391" target="_blank">
+          <Link {...css.link} href="tel:+998990027391" target="_blank">
             <Image src={Icon} />
             Биз билан боғланинг
             <Image src={ArrowIcon} />

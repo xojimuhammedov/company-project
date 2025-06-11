@@ -24,7 +24,7 @@ const Services = () => {
             <Text {...css.text}>
               Визуал жиҳатдан фойдаланувчига қаратилган веб-сайтларни яратиш.
             </Text>
-            <Link href="tel+998990027391" target="_blank" {...css.button}>
+            <Link href="tel:+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
@@ -33,7 +33,7 @@ const Services = () => {
             <Text {...css.text}>
               Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
             </Text>
-            <Link href="tel+998990027391" target="_blank" {...css.button}>
+            <Link href="tel:+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
@@ -44,7 +44,7 @@ const Services = () => {
             <Text {...css.text}>
               Эсда қоларли ва таъсирли бренд логотипларини яратиш.
             </Text>
-            <Link href="tel+998990027391" target="_blank" {...css.button}>
+            <Link href="tel:+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
@@ -53,7 +53,7 @@ const Services = () => {
             <Text {...css.text}>
               Самарали ижтимоий медиа кампанияларига визуалларни яратиш.
             </Text>
-            <Link href="tel+998990027391" target="_blank" {...css.button}>
+            <Link href="tel:+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
@@ -62,7 +62,7 @@ const Services = () => {
             <Text {...css.text}>
               Қидирув тизимининг кўриниши ва рейтингини яхшилаш.
             </Text>
-            <Link href="tel+998990027391" target="_blank" {...css.button}>
+            <Link href="tel:+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>

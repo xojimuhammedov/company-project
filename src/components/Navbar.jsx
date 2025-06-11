@@ -21,7 +21,7 @@ const Navbar = () => {
               </Link>
               {/* <Link href="#">Нархлар</Link> */}
             </Flex>
-            <Link {...css.button} href="tel+998990027391" target="_blank">
+            <Link {...css.button} href="tel:+998990027391" target="_blank">
               Биз билан боғланиш
             </Link>
           </Flex>

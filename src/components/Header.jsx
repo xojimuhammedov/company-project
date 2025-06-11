@@ -13,7 +13,7 @@ const Header = () => {
           <Heading {...css.title}>
             Бизнесингиз учун веб сайтга хозироқ буюртма беринг
           </Heading>
-          <Link {...css.link} href="tel+998990027391" target="_blank">
+          <Link {...css.link} href="tel:+998990027391" target="_blank">
             Биз билан боғланиш
           </Link>
         </Flex>
