@@ -1,0 +1,6 @@
+.app {
+  background-image: url("./assets/header-banner.png");
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-size: cover;
+}
