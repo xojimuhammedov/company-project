@@ -1,8 +1,11 @@
 import { Box, Flex, Heading, Link, SimpleGrid, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 import ItemImage from "../assets/item.png";
+import ScrollTrigger from "react-scroll-trigger";
+import CountUp from "react-countup";
 
 const Header = () => {
+  const [count, setCount] = useState(false);
   return (
     <Box pt={"72px"}>
       <Box className="container">
@@ -14,38 +17,76 @@ const Header = () => {
             Биз билан боғланиш
           </Link>
         </Flex>
-        <SimpleGrid gap={'20px'} columns={3}>
-          <Flex
-            {...css.item}
-            flexDirection={"column"}
-            align={"center"}
-            justify={'center'}
-            gap={"8px"}
-          >
-            <Heading {...css.number}>50+</Heading>
-            <Text {...css.name}>Тугалланган лойиҳалар</Text>
-          </Flex>
-          <Flex
-            {...css.item}
-            flexDirection={"column"}
-            align={"center"}
-            justify={'center'}
-            gap={"8px"}
-          >
-            <Heading {...css.number}>5+</Heading>
-            <Text {...css.name}>Йиллик Тажриба</Text>
-          </Flex>
-          <Flex
-            {...css.item}
-            flexDirection={"column"}
-            align={"center"}
-            justify={'center'}
-            gap={"8px"}
-          >
-            <Heading {...css.number}>40+</Heading>
-            <Text {...css.name}>Мамнун мижозлар</Text>
-          </Flex>
-        </SimpleGrid>
+        <ScrollTrigger
+          onEnter={() => setCount(true)}
+          onExit={() => setCount(false)}
+        >
+          <SimpleGrid gap={"20px"} columns={3}>
+            <Flex
+              {...css.item}
+              flexDirection={"column"}
+              align={"center"}
+              justify={"center"}
+              gap={"8px"}
+            >
+              <Heading {...css.number}>
+                {count && (
+                  <CountUp
+                    className="static-number"
+                    start={0}
+                    duration={2.75}
+                    end="50"
+                    delay={0}
+                  />
+                )}
+                <span style={{ color: "#191919" }}>+</span>
+              </Heading>
+              <Text {...css.name}>Тугалланган лойиҳалар</Text>
+            </Flex>
+            <Flex
+              {...css.item}
+              flexDirection={"column"}
+              align={"center"}
+              justify={"center"}
+              gap={"8px"}
+            >
+              <Heading {...css.number}>
+                {count && (
+                  <CountUp
+                    className="static-number"
+                    start={0}
+                    duration={2.75}
+                    end="5"
+                    delay={0}
+                  />
+                )}
+                <span style={{ color: "#191919" }}>+</span>
+              </Heading>
+              <Text {...css.name}>Йиллик Тажриба</Text>
+            </Flex>
+            <Flex
+              {...css.item}
+              flexDirection={"column"}
+              align={"center"}
+              justify={"center"}
+              gap={"8px"}
+            >
+              <Heading {...css.number}>
+                {count && (
+                  <CountUp
+                    className="static-number"
+                    start={0}
+                    duration={2.75}
+                    end="30"
+                    delay={0}
+                  />
+                )}
+                <span style={{ color: "#191919" }}>+</span>
+              </Heading>
+              <Text {...css.name}>Мамнун мижозлар</Text>
+            </Flex>
+          </SimpleGrid>
+        </ScrollTrigger>
       </Box>
     </Box>
   );

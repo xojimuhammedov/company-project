@@ -40,27 +40,27 @@ const Services = () => {
         </SimpleGrid>
         <SimpleGrid gap={"24px"} m={"24px auto"} columns={{ base: 1, lg: 3 }}>
           <Box {...css.item}>
-            <Heading {...css.name}>Веб десигн</Heading>
+            <Heading {...css.name}>Логотип дизайни</Heading>
             <Text {...css.text}>
-              Визуал жиҳатдан фойдаланувчига қаратилган веб-сайтларни яратиш.
+              Эсда қоларли ва таъсирли бренд логотипларини яратиш.
             </Text>
             <Link href="tel+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
           <Box {...css.item}>
-            <Heading {...css.name}>Веб девелопмент</Heading>
+            <Heading {...css.name}>Ижтимоий пост дизайни</Heading>
             <Text {...css.text}>
-              Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
+              Самарали ижтимоий медиа кампанияларига визуалларни яратиш.
             </Text>
             <Link href="tel+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
             </Link>
           </Box>
           <Box {...css.item}>
-            <Heading {...css.name}>Веб девелопмент</Heading>
+            <Heading {...css.name}>СEО оптималлаштириш</Heading>
             <Text {...css.text}>
-              Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
+              Қидирув тизимининг кўриниши ва рейтингини яхшилаш.
             </Text>
             <Link href="tel+998990027391" target="_blank" {...css.button}>
               Биз билан боғланинг
@@ -112,7 +112,7 @@ const css = {
   },
   text: {
     color: "#666",
-    fontSize: "17px",
+    fontSize: "15px",
     lineHeight: "24px",
     fontWeight: "500",
     width: "100%",
