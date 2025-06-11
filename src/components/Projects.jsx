@@ -12,6 +12,7 @@ import React from "react";
 import ProjectOne from "../assets/project-1.jpg";
 import ProjectTwo from "../assets/project-2.jpg";
 import ProjectThree from "../assets/project-3.jpg";
+import ProjectFour from "../assets/project-4.jpg";
 import ServicesIcon from "../assets/ServicesIcon";
 
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
           Лойиҳаларимиз
         </Flex>
         <Heading {...css.title}>Бизнинг лойиҳаларимиз</Heading>
-        <SimpleGrid columns={2} gap={"24px"}>
+        <SimpleGrid columns={{ base: 1, md: 2 }} gap={"24px"}>
           <Box>
             <Image {...css.image} src={ProjectOne} alt="ProjectOne" />
             <Heading {...css.name}>Asilbek Sultanbek Logistics Group</Heading>
@@ -46,6 +47,13 @@ const Projects = () => {
             <Image {...css.image} src={ProjectThree} alt="ProjectOne" />
             <Heading {...css.name}>CSR Travel</Heading>
             <Link {...css.link} target="_blank" href="https://csrtravel.uz/">
+              Ташриф буюриш
+            </Link>
+          </Box>
+          <Box>
+            <Image {...css.image} src={ProjectFour} alt="ProjectOne" />
+            <Heading {...css.name}>Al Muamalat</Heading>
+            <Link {...css.link} target="_blank" href="https://al-muamalat.uz/">
               Ташриф буюриш
             </Link>
           </Box>

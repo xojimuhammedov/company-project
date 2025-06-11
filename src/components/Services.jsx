@@ -13,43 +13,58 @@ const Services = () => {
         <Heading {...css.title}>
           Биз таклиф қиладиган кенг қамровли хизматлар
         </Heading>
-        <SimpleGrid gap={"24px"} m={"24px auto"} maxW={"800px"} columns={2}>
+        <SimpleGrid
+          gap={"24px"}
+          m={"24px auto"}
+          maxW={"800px"}
+          columns={{ base: 1, md: 2 }}
+        >
           <Box {...css.item}>
             <Heading {...css.name}>Веб десигн</Heading>
             <Text {...css.text}>
               Визуал жиҳатдан фойдаланувчига қаратилган веб-сайтларни яратиш.
             </Text>
-            <Link {...css.button}>Биз билан боғланинг</Link>
+            <Link href="tel+998990027391" target="_blank" {...css.button}>
+              Биз билан боғланинг
+            </Link>
           </Box>
           <Box {...css.item}>
             <Heading {...css.name}>Веб девелопмент</Heading>
             <Text {...css.text}>
               Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
             </Text>
-            <Link {...css.button}>Биз билан боғланинг</Link>
+            <Link href="tel+998990027391" target="_blank" {...css.button}>
+              Биз билан боғланинг
+            </Link>
           </Box>
         </SimpleGrid>
-        <SimpleGrid gap={"24px"} m={"24px auto"} columns={3}>
+        <SimpleGrid gap={"24px"} m={"24px auto"} columns={{ base: 1, lg: 3 }}>
           <Box {...css.item}>
             <Heading {...css.name}>Веб десигн</Heading>
             <Text {...css.text}>
               Визуал жиҳатдан фойдаланувчига қаратилган веб-сайтларни яратиш.
             </Text>
-            <Link {...css.button}>Биз билан боғланинг</Link>
+            <Link href="tel+998990027391" target="_blank" {...css.button}>
+              Биз билан боғланинг
+            </Link>
           </Box>
           <Box {...css.item}>
             <Heading {...css.name}>Веб девелопмент</Heading>
             <Text {...css.text}>
               Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
             </Text>
-            <Link {...css.button}>Биз билан боғланинг</Link>
+            <Link href="tel+998990027391" target="_blank" {...css.button}>
+              Биз билан боғланинг
+            </Link>
           </Box>
           <Box {...css.item}>
             <Heading {...css.name}>Веб девелопмент</Heading>
             <Text {...css.text}>
               Кучли ва кенгайтириладиган веб-иловалар ва ечимларни яратиш.
             </Text>
-            <Link {...css.button}>Биз билан боғланинг</Link>
+            <Link href="tel+998990027391" target="_blank" {...css.button}>
+              Биз билан боғланинг
+            </Link>
           </Box>
         </SimpleGrid>
       </Box>
