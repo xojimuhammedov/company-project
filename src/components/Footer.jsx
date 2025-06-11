@@ -19,7 +19,7 @@ const Footer = () => {
             тақдим этади.
           </Text>
         </Flex>
-        <Flex justifyContent={'center'} mt={'16px'} gap={"24px"} align={"center"}>
+        <Flex flexWrap={'wrap'} justifyContent={'center'} mt={'16px'} gap={"24px"} align={"center"}>
           <Link {...css.links} href="#">
             Биз Ҳақимизда
           </Link>

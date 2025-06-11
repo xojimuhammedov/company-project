@@ -21,7 +21,7 @@ const Header = () => {
           onEnter={() => setCount(true)}
           onExit={() => setCount(false)}
         >
-          <SimpleGrid gap={"20px"} columns={3}>
+          <SimpleGrid gap={"20px"} columns={{ base: 1, md: 3 }}>
             <Flex
               {...css.item}
               flexDirection={"column"}
@@ -96,11 +96,20 @@ export default Header;
 
 const css = {
   title: {
-    fontSize: "45px",
-    lineHeight: "57px",
+    fontSize: {
+      base: "25px",
+      lg: "45px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "57px",
+    },
     fontWeight: "500",
     color: "#191919",
-    width: "634px",
+    width: {
+      base: "100%",
+      lg: "634px",
+    },
     textAlign: "center",
   },
   link: {

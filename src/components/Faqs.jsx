@@ -134,12 +134,21 @@ const css = {
     padding: "4px 8px",
   },
   title: {
-    fontSize: "45px",
-    lineHeight: "57px",
+    fontSize: {
+      base: "25px",
+      lg: "45px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "57px",
+    },
     fontWeight: "500",
     color: "#191919",
     textAlign: "center",
-    width: "550px",
+    width: {
+      base: "100%",
+      lg: "550px",
+    },
     margin: "24px auto",
   },
   items: {
@@ -147,10 +156,16 @@ const css = {
     borderRadius: "14px",
     background: "#F6F7F9",
     margin: "20px auto",
-    width: "630px",
+    width: {
+      base: "100%",
+      lg: "630px",
+    },
   },
   name: {
-    fontSize: "22px",
+    fontSize: {
+      base: "18px",
+      lg: "22px",
+    },
     lineHeight: "28px",
     fontWeight: "500",
     color: "#191919",

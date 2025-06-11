@@ -10,7 +10,7 @@ const WhyUs = () => {
           Нега биз
         </Flex>
         <Heading {...css.title}>Нега бизни танлашингиз керак</Heading>
-        <SimpleGrid mt={"48px"} gap={"24px"} columns={2}>
+        <SimpleGrid mt={"48px"} gap={"24px"} columns={{ base: 1, md: 2 }}>
           <Flex {...css.item}>
             <Heading {...css.name}>Экспертлар жамоаси</Heading>
             <Text {...css.text}>
@@ -74,8 +74,14 @@ const css = {
     padding: "4px 8px",
   },
   title: {
-    fontSize: "45px",
-    lineHeight: "57px",
+    fontSize: {
+      base: "25px",
+      lg: "45px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "57px",
+    },
     fontWeight: "500",
     color: "#191919",
     textAlign: "center",

@@ -39,7 +39,10 @@ const css = {
     background: "#FFF",
     boxShadow:
       "0px 2px 2px 0px rgba(182, 182, 182, 0.10), 0px 2px 3px 0px rgba(182, 182, 182, 0.08)",
-    padding: "8px 8px 8px 16px",
+    padding: {
+      base: "4px 4px 4px 12px",
+      lg: "8px 8px 8px 16px",
+    },
     maxWidth: "1084px",
     width: "100%",
     margin: "auto",
@@ -50,6 +53,10 @@ const css = {
     lineHeight: "24px",
     fontWeight: "500",
     transition: "0.3s",
+    display: {
+      base: "none",
+      lg: "block",
+    },
 
     _hover: {
       color: "#9F54F7",
@@ -59,11 +66,20 @@ const css = {
     borderRadius: "100px",
     background: "linear-gradient(180deg, #9F54F7 0%, #8523F5 100%)",
     color: "#fff",
-    fontSize: "17px",
+    fontSize: {
+      base: "14px",
+      lg: "17px",
+    },
     fontWeight: "500",
     lineHeight: "24px",
-    width: "200px",
-    height: "50px",
+    width: {
+      base: "150px",
+      lg: "200px",
+    },
+    height: {
+      base: "40px",
+      lg: "50px",
+    },
     display: "flex",
     alignItems: "center",
     justifyContent: "center",

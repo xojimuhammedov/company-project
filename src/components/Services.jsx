@@ -88,12 +88,21 @@ const css = {
     padding: "4px 8px",
   },
   title: {
-    fontSize: "45px",
-    lineHeight: "57px",
+    fontSize: {
+      base: "25px",
+      lg: "45px",
+    },
+    lineHeight: {
+      base: "30px",
+      lg: "57px",
+    },
     fontWeight: "500",
     color: "#191919",
     textAlign: "center",
-    width: "750px",
+    width: {
+      base: "100%",
+      lg: "750px",
+    },
     margin: "24px auto",
   },
   item: {
